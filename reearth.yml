@@ -1,0 +1,26 @@
+id: tile-contigure-widget-plugin
+name: Nagasaki Tile Widget Plugin
+version: 1.0.0
+extensions:
+  - id: tile-configure-widget
+    type: widget
+    name: Nagasaki Tile Widget Plugin
+    schema:
+      groups:
+        - id: color
+          fields:
+            - id: bgColor
+              type: string
+              title: Background Color
+              ui: color
+            - id: textColor
+              type: string
+              title: Text Color
+              ui: color
+        - id: name
+          title: Name
+          list: true
+          fields:
+          - id: tileName
+            type: string
+            title: Tile name
